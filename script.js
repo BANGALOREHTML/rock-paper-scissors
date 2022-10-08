@@ -1,5 +1,5 @@
 //* STATE - What do we want to keep track of?
-/***************************************************/
+
 var playAgain;
 var userChoice = "";
 var cpuChoice = "";
@@ -34,3 +34,18 @@ var OPTIONS = ["Rock", "Paper", "Scissors"];
         - if cpu picks "Paper": win
         - if cpu picks "Scissors": tie
 8. Display score
+9. Prompt user to play again
+10. If user chooses to play again, repeat steps 2-9
+
+
+
+
+
+
+
+
+
+*/
+
+var input = prompt("Rock, Paper, Scissors?");
+
