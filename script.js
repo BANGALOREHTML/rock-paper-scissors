@@ -27,8 +27,10 @@ var OPTIONS = ["Rock", "Paper", "Scissors"];
     - if user picks "Paper":
         - if cpu picks "Rock": wins
         - if cpu picks "Paper": tie
+        - if cpu picks "Scissors": loss
 
     - if user picks "Scissors":
         - if cpu picks "Rock": loss
         - if cpu picks "Paper": win
+        - if cpu picks "Scissors": tie
 8. Display score
