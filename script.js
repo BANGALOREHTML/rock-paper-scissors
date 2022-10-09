@@ -54,6 +54,8 @@ if (userChoice === "Rock"){
         // then loss
     } else  {
         // then win
+        }
+
     } else if (userChoice === "Paper") {
         if (cpuChoice === "Rock") {
             // then win
@@ -62,6 +64,7 @@ if (userChoice === "Rock"){
         } else {
             // then loss
         }
+        
     } else if (userChoice === "Scissors") {
         if (cpuChoice === "Rock") {
             // then loss
