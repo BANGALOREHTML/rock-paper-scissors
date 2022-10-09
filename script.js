@@ -47,5 +47,28 @@ var OPTIONS = ["Rock", "Paper", "Scissors"];
 
 */
 
-var input = prompt("Rock, Paper, Scissors?");
+if (userChoice === "Rock"){
+    if (cpuChoice === "Rock") {
+        // then tie
+    } else if (cpuChoice === "Paper") {
+        // then loss
+    } else  {
+        // then win
+    } else if (userChoice === "Paper") {
+        if (cpuChoice === "Rock") {
+            // then win
+        } else if (cpuChoice === "Paper") {
+            // then tie
+        } else {
+            // then loss
+        }
+    } else if (userChoice === "Scissors") {
+        if (cpuChoice === "Rock") {
+            // then loss
+        } else if (cpuChoice === "Paper") {
+            // then win
+        } else {
+            // then tie
+        }
+    }
 
