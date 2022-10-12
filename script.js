@@ -108,7 +108,6 @@ function funtime () {
 
     playAgain = window.prompt("Would you like to play again?");
 
+    funtime ();
 
-
-Math.floor(Math.random()* OPTIONS.length);
-var playAgain = Math.floor(Math.random()* OPTIONS.length);
+}git
