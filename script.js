@@ -1,13 +1,19 @@
 //* STATE - What do we want to keep track of?
 
 var playAgain;
-var userChoice = "";
-var cpuChoice = "";
+var userChoice = "R, P, S";
+var cpuChoice = "R, P, S";
 var wins = 0;
 var losses = 0;
 var ties = 0;
+var score = 0;
 
-var OPTIONS = ["Rock", "Paper", "Scissors"];
+
+
+var OPTIONS = ["R", "P", "S"];
+array = [0,1,2 ];
+
+
 
 //* ACTIONS - What are the steps?
 
@@ -38,40 +44,71 @@ var OPTIONS = ["Rock", "Paper", "Scissors"];
 10. If user chooses to play again, repeat steps 2-9
 
 
-
-
-
-
-
-
-
 */
 
-if (userChoice === "Rock"){
-    if (cpuChoice === "Rock") {
-        // then tie
-    } else if (cpuChoice === "Paper") {
-        // then loss
-    } else  {
-        // then win
-        }
 
-    } else if (userChoice === "Paper") {
-        if (cpuChoice === "Rock") {
-            // then win
-        } else if (cpuChoice === "Paper") {
-            // then tie
-        } else {
-            // then loss
-        }
-        
-    } else if (userChoice === "Scissors") {
-        if (cpuChoice === "Rock") {
-            // then loss
-        } else if (cpuChoice === "Paper") {
-            // then win
-        } else {
-            // then tie
-        }
+
+function funtime () {
+    var userChoice = window.prompt("Choose R, P, or S!!");
+
+    if (userChoice === "R") {
+        window.alert("You chose Rock!");
+    } else if (userChoice === "P") {
+        window.alert("You chose Paper!");
+    } else if (userChoice === "S") {
+        window.alert("You chose Scissors!");
+    } else {
+        window.alert("You didn't choose anything!");
     }
 
+    var cpuChoice = OPTIONS[Math.floor(Math.random() * OPTIONS.length)];
+
+    if (cpuChoice === "R") {
+        window.alert("The computer chose Rock!");
+    } else if (cpuChoice === "P") {
+        window.alert("The computer chose Paper!");
+    } else if (cpuChoice === "S") {
+        window.alert("The computer chose Scissors!");
+    } else {
+        window.alert("The computer didn't choose anything!");
+    }
+
+    if (userChoice === "R" && cpuChoice === "R") {
+        window.alert("You tied!");
+        ties++;
+    } else if (userChoice === "R" && cpuChoice === "P") {
+        window.alert("You lost!");
+        losses++;
+    } else if (userChoice === "R" && cpuChoice === "S") {
+        window.alert("You won!");
+        wins++;
+    } else if (userChoice === "P" && cpuChoice === "R") {
+        window.alert("You won!");
+        wins++;
+    } else if (userChoice === "P" && cpuChoice === "P") {
+        window.alert("You tied!");
+        ties++;
+    } else if (userChoice === "P" && cpuChoice === "S") {
+        window.alert("You lost!");
+        losses++;
+    } else if (userChoice === "S" && cpuChoice === "R") {
+        window.alert("You lost!");
+        losses++;
+    } else if (userChoice === "S" && cpuChoice === "P") {
+        window.alert("You won!");
+        wins++;
+    } else if (userChoice === "S" && cpuChoice === "S") {
+        window.alert("You tied!");
+        ties++;
+    } else {
+        window.alert("You didn't choose anything!");
+    }
+
+    window.alert("Wins: " + wins + " Losses: " + losses + " Ties: " + ties);
+
+    playAgain = window.prompt("Would you like to play again?");
+
+
+
+Math.floor(Math.random()* OPTIONS.length);
+var playAgain = Math.floor(Math.random()* OPTIONS.length);
