@@ -50,7 +50,7 @@ array = [0,1,2 ];
 
 function funtime () {
     var userChoice = window.prompt("Choose R, P, or S!!");
-
+        userChoice = userChoice.toUpperCase();
     if (userChoice === "R") {
         window.alert("You chose Rock!");
     } else if (userChoice === "P") {
@@ -107,7 +107,11 @@ function funtime () {
     window.alert("Wins: " + wins + " Losses: " + losses + " Ties: " + ties);
 
     playAgain = window.prompt("Would you like to play again?");
+     playAgain = playAgain.toUpperCase();
+       if (playAgain === "YES") {
+           funtime();
+       }
 
-    funtime ();
+}
 
-}git
+funtime();
