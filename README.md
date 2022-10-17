@@ -1,14 +1,21 @@
-<!--PROJECT TITLE -->
-Rock, Paper, Scissors
+# Rock-Paper-Scissors
+A secure password generator made with JavaScript styled with CSS and HTML.
 
+## User Story
+To play  a  game of rock paper scissors against the computer. The user will be able to choose between rock, paper, or scissors. The computer will randomly choose between rock, paper, or scissors. The user will be able to see the results of the game and the score.
 
-<!--PROJECT INTRODUCTION-->
-A  JavaScript Rock, Paper, Scissors game.
+#### What is it?
+Rock Paper Scissors is a game where two players choose between rock, paper, or scissors. 
+#### Why did I make this?
+I made this game to practice my JavaScript skills. I also wanted to make a game that I could play with my friends.
 
+#### How does it work?
+The user will be able to choose between rock, paper, or scissors. The computer will randomly choose between rock, paper, or scissors. The user will be able to see the results of the game and the score.
 
-<!--PROJECT DESCRIPTION-->
-User enters Rock, Paper, or Scissors and the computer randomly chooses one of the three. The winner is determined and the score is updated. User can play as many times as they want. The game ends when the user chooses to stop playing.
+### Screenshot of working application and link to deployed application
+[Screenshot of Deployed Application](./assets/Dep.jpg)
 
+Deployed Website Link [Click Here!](http://127.0.0.1:5501/index.html)
 
-<!--THERE SHOULD BE NO ADDITIONAL INFORMATION NEEDED-->
-Thanks for playing! 
+### Credits
+Created by Dez Duran
